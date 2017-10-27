@@ -1,0 +1,68 @@
+\documentclass[ngerman]{gdb-aufgabenblatt}
+
+\usepackage{enumitem}
+\renewcommand{\Aufgabenblatt}{1}
+\renewcommand{\Ausgabedatum}{Mi. 18.10.2017}
+\renewcommand{\Abgabedatum}{Fr. 03.11.2017}
+\renewcommand{\Gruppe}{Meimerstorf,Jochens,Töter}
+\renewcommand{\STiNEGruppe}{19}
+
+
+\begin{document}
+
+\section{Informationssysteme}
+\subsection{Charakterisierung}
+Ein Informationssystem ist ein informationstechnologisch untersütztes Anwendungssystem, also im Endeffekt ein Computersystem, welches betriebliche Aufgaben ausführt. Charaktisierend für ein Datenbanksystem ist eine leichte Handhabbarkeit der Daten, die Kontrolle der Datenintegrität und die Kontrolle über die operationalen Daten, außerdem im heutigen Status in Zeiten von Amazon und google ist auch die Leistung und Skalierbarkeit der Daten wichtig. Die Skalierbarkeit, da eine Datenbank für eine kleine Webanwendung sowie auch für ein großes DB-System wie Amazons Nutzerverwaltung funktionieren muss. 
+\textbf{Aufgaben:} 
+\begin{enumerate}[label=\arabic*)]
+\item Organisieren von Arbeitsabläufen \\
+\item Paralleler Zugriff von mehreren Stellen \\
+\item Hoher Durchsatz und kurze Antwortzeit \\
+\end{enumerate}
+\subsection{Datenunabhängigkeit}
+Die Datenunabhängigkeit bezeichnet die Unabhängikeit der Daten und den dazugehörigen Anwendungsprogrammen. Realisiert wird dies meist, dadurch das ein DMS, eine Schnittstelle zu den Daten bereitstellt welche die Anwendungsprogramme dann verwenden können. \\ Daraus folgt auch direkt die physische Unabhängikeit, welche darstellt, das die Anwendungsprogramme nicht verändert werden müssen wenn sich die physische Speicherungsart der Daten auf der Festplatte ändert. Da sich die Schnittstelle nicht ändert. \\
+Die logische Unabhängikeit bezeichnet, die Robustheit der Anwendungsprogramme gegen Änderungen im Datenbankschema. Dies ist auf jeden Fall bei SQL Datenbanken nicht der Fall, da wenn ich mein Schema verändere ich auch meine SQL-Queries verändern muss. \\ 
+\subsection{Beispiele}
+\begin{enumerate}
+\item SAP System in Unternehmen \\
+\item Googles Suchmaschine \\	
+\item 
+\end{enumerate}
+\section{Miniwelt}
+\subsection{relevante Objekte}
+\subsection{Anforderungen}
+\section{Transaktionen}
+\subsection{Zeitpunkt A}
+\subsubsection{Dateisystem}
+\begin{enumerate}
+\item Daten im RAM: \\
+\item Daten auf Platte: \\
+\end{enumerate}
+\subsubsection{Datenbanksystem}
+\begin{enumerate}
+\item Daten im RAM: \\
+\item Daten auf Platte: \\
+\end{enumerate}
+\subsection{Zeitpunkt B}
+\subsubsection{Dateisystem}
+\begin{enumerate}
+\item Daten im RAM: \\
+\item Daten auf Platte: \\
+\end{enumerate}
+\subsubsection{Datenbanksystem}
+\begin{enumerate}
+\item Daten im RAM: \\
+\item Daten auf Platte: \\
+\end{enumerate}
+\section{Warm-Up SQL}
+\subsection{Create/Insert}
+Mit dem Befehl CREATE TABLE wird eine Tabelle mit dem Namen user in der Datenbank gdb$\_$Gruppe erstellt. Diese enhält dem Befehl entsprechend drei verschiedene Einträge, eine ID welche als primärer Key für die Tabelle verwendet wird, außerdem einen 49 Zeichen langen Character der nicht leer sein darf wenn ein Objekt in die Tabelle eingefügt wird, und als letztes noch das passwort, welches 8 Zeichen lang sein kann und auch nicht leer sein darf. \\
+Mit dem zweiten Befehl INSERT INTO wird ein Datensatz bestehend aus (ID,Name,Passwort) in die vorher erstelle Tabelle eingefügt.\\
+\subsection{SELECT/DROP}
+Mit dem Befehl SELECT * FROM table WHERE, werden alle Datensätze der Tabelle table ausgegeben bei denen die Bedingung welche nach WHERE steht, stimmt. Also in unserem Fall genau unseren Datensatz. Hierbei ist zu beachten, dass durch das * wir alle Spalten des Datensatzes mitgeliefert bekommen und nicht nur eine spezielle Spalte \\
+Mit dem Befehl DROP können Tabellen komplett aus der Datenbank gelöscht werden, wobei hier darauf zu achten ist das DROP tatsächlich im Gegensatz zu TRUNCATE die Tabelle löscht und nicht nur den Inhalt der Tabelle. \\
+
+
+
+
+\end{document}
