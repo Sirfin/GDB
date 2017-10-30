@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.10.19)  27 OCT 2017 13:29
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.10.19)  30 OCT 2017 14:36
 entering extended mode
 **./G01B01_Meimerstorf-Jochens-Töter.tex
 (G01B01_Meimerstorf-Jochens-Töter.tex
@@ -777,22 +777,26 @@ Package: enumitem 2011/09/28 v3.5.2 Customized lists
 \enit@inbox=\box64
 \enitdp@description=\count124
 )
-No file G01B01_Meimerstorf-Jochens-Töter.aux.
+(C:\Users\ftoet\AppData\Roaming\MiKTeX\2.9\tex\latex\dingbat\dingbat.sty
+Package: dingbat 2001/04/27 v1.00 Hands and other dingbats
+)
+(G01B01_Meimerstorf-Jochens-Töter.aux)
 \openout1 = `G01B01_Meimerstorf-Jochens-Töter.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Try loading font information for T1+cmss on input line 11.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Try loading font information for T1+cmss on input line 12.
+
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\t1cmss.fd"
 File: t1cmss.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
@@ -838,11 +842,6 @@ G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 456.
 )
 ABD: EveryShipout initializing macros
-Underfull \hbox (badness 10000) in paragraph at lines 18--19
-
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 19--20
 
  []
@@ -853,26 +852,44 @@ Underfull \hbox (badness 10000) in paragraph at lines 20--21
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 23--25
+Underfull \hbox (badness 10000) in paragraph at lines 21--22
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 27--28
+Underfull \hbox (badness 10000) in paragraph at lines 24--26
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 28--30
+Underfull \hbox (badness 10000) in paragraph at lines 28--29
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 38--39
+Underfull \hbox (badness 10000) in paragraph at lines 29--30
 
  []
 
-LaTeX Font Info:    Try loading font information for U+lasy on input line 39.
+
+Underfull \hbox (badness 10000) in paragraph at lines 30--31
+
+ []
+
+LaTeX Font Info:    Try loading font information for OMS+cmss on input line 35.
+
+LaTeX Font Info:    No file OMScmss.fd. on input line 35.
+
+LaTeX Font Warning: Font shape `OMS/cmss/m/n' undefined
+(Font)              using `OMS/cmsy/m/n' instead
+(Font)              for symbol `textbullet' on input line 35.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 35--37
+
+ []
+
+LaTeX Font Info:    Try loading font information for U+lasy on input line 37.
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\ulasy.fd"
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
@@ -886,7 +903,7 @@ Overfull \vbox (18.19798pt too high) has occurred while \output is active []
 File: vsis.pdf Graphic file (type pdf)
 
 <use vsis.pdf>
-Package pdftex.def Info: vsis.pdf used on input line 39.
+Package pdftex.def Info: vsis.pdf used on input line 37.
 (pdftex.def)             Requested size: 62.59596pt x 62.59795pt.
 
 Overfull \vbox (18.19798pt too high) has occurred while \output is active []
@@ -898,7 +915,32 @@ Overfull \vbox (77.26578pt too high) has occurred while \output is active []
 [1{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}
 
  <./vsis.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 37--38
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 38--39
+
+ []
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 39--40
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 40--41
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 41--42
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 42--43
 
  []
 
@@ -913,12 +955,27 @@ Underfull \hbox (badness 10000) in paragraph at lines 44--45
  []
 
 
+Underfull \hbox (badness 10000) in paragraph at lines 46--48
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 48--49
+
+ []
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 49--50
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 50--51
+Underfull \hbox (badness 10000) in paragraph at lines 51--53
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 53--54
 
  []
 
@@ -932,6 +989,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 55--56
 
  []
 
+
+Underfull \hbox (badness 10000) in paragraph at lines 56--57
+
+ []
+
 <use vsis.pdf>
 Overfull \vbox (18.19798pt too high) has occurred while \output is active []
 
@@ -942,7 +1004,7 @@ Overfull \vbox (18.19798pt too high) has occurred while \output is active []
 File: vsis.pdf Graphic file (type pdf)
 
 <use vsis.pdf>
-Package pdftex.def Info: vsis.pdf used on input line 56.
+Package pdftex.def Info: vsis.pdf used on input line 57.
 (pdftex.def)             Requested size: 62.59596pt x 62.59795pt.
 
 Overfull \vbox (18.19798pt too high) has occurred while \output is active []
@@ -952,12 +1014,52 @@ Overfull \vbox (77.26578pt too high) has occurred while \output is active []
 
 
 [2]
-Underfull \hbox (badness 10000) in paragraph at lines 59--61
+Underfull \hbox (badness 10000) in paragraph at lines 58--60
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 62--64
+Underfull \hbox (badness 10000) in paragraph at lines 60--61
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 61--62
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 62--63
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 64--66
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 66--67
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 67--68
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 68--69
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 79--81
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 84--86
 
  []
 
@@ -971,7 +1073,7 @@ Overfull \vbox (18.19798pt too high) has occurred while \output is active []
 File: vsis.pdf Graphic file (type pdf)
 
 <use vsis.pdf>
-Package pdftex.def Info: vsis.pdf used on input line 68.
+Package pdftex.def Info: vsis.pdf used on input line 86.
 (pdftex.def)             Requested size: 62.59596pt x 62.59795pt.
 
 Overfull \vbox (18.19798pt too high) has occurred while \output is active []
@@ -980,27 +1082,89 @@ Overfull \vbox (18.19798pt too high) has occurred while \output is active []
 Overfull \vbox (77.26578pt too high) has occurred while \output is active []
 
 
-[3] (G01B01_Meimerstorf-Jochens-Töter.aux) ) 
+[3]
+Underfull \hbox (badness 10000) in paragraph at lines 106--107
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 107--108
+
+ []
+
+<use vsis.pdf>
+Overfull \vbox (18.19798pt too high) has occurred while \output is active []
+
+
+<use vsis.pdf>
+Overfull \vbox (18.19798pt too high) has occurred while \output is active []
+
+File: vsis.pdf Graphic file (type pdf)
+
+<use vsis.pdf>
+Package pdftex.def Info: vsis.pdf used on input line 108.
+(pdftex.def)             Requested size: 62.59596pt x 62.59795pt.
+
+Overfull \vbox (18.19798pt too high) has occurred while \output is active []
+
+
+Overfull \vbox (77.26578pt too high) has occurred while \output is active []
+
+
+[4]
+Underfull \hbox (badness 10000) in paragraph at lines 111--113
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 114--116
+
+ []
+
+<use vsis.pdf>
+Overfull \vbox (18.19798pt too high) has occurred while \output is active []
+
+
+<use vsis.pdf>
+Overfull \vbox (18.19798pt too high) has occurred while \output is active []
+
+File: vsis.pdf Graphic file (type pdf)
+
+<use vsis.pdf>
+Package pdftex.def Info: vsis.pdf used on input line 120.
+(pdftex.def)             Requested size: 62.59596pt x 62.59795pt.
+
+Overfull \vbox (18.19798pt too high) has occurred while \output is active []
+
+
+Overfull \vbox (77.26578pt too high) has occurred while \output is active []
+
+
+[5] (G01B01_Meimerstorf-Jochens-Töter.aux)
+
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
+ ) 
 Here is how much of TeX's memory you used:
- 18393 strings out of 493323
- 380499 string characters out of 3139065
- 547212 words of memory out of 3000000
- 21555 multiletter control sequences out of 15000+200000
+ 18441 strings out of 493323
+ 381340 string characters out of 3139065
+ 547481 words of memory out of 3000000
+ 21595 multiletter control sequences out of 15000+200000
  18380 words of font info for 53 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 86i,23n,81p,8848b,625s stack positions out of 5000i,500n,10000p,200000b,50000s
- <C:\Users\ftoet\AppData\Local\MiK
-TeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecsx1095.pk> <C:\Users\ftoet\AppData
-\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecss1095.pk> <C:\Users\fto
-et\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecsx1200.pk> <C:
-\Users\ftoet\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecsx14
-40.pk> <C:\Users\ftoet\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi
-600\ecsx1000.pk> <C:\Users\ftoet\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknap
-pen\ec\dpi600\ecss1000.pk>
-Output written on G01B01_Meimerstorf-Jochens-Töter.pdf (3 pages, 207392 bytes)
+ 86i,23n,81p,8848b,700s stack positions out of 5000i,500n,10000p,200000b,50000s
+ <C:\Users\ftoet\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\
+ecsx1095.pk> <C:\Users\ftoet\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\
+ec\dpi600\ecss1095.pk> <C:\Users\ftoet\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour
+\jknappen\ec\dpi600\ecsx1200.pk> <C:\Users\ftoet\AppData\Local\MiKTeX\2.9\fonts
+\pk\ljfour\jknappen\ec\dpi600\ecsx1440.pk> <C:\Users\ftoet\AppData\Local\MiKTeX
+\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecsx1000.pk> <C:\Users\ftoet\AppData\Lo
+cal\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecss1000.pk><C:/Program Files
+/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
+Output written on G01B01_Meimerstorf-Jochens-Töter.pdf (5 pages, 222667 bytes)
 .
 PDF statistics:
- 262 PDF objects out of 1000 (max. 8388607)
+ 281 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  18 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -1,6 +1,7 @@
 \documentclass[ngerman]{gdb-aufgabenblatt}
 
 \usepackage{enumitem}
+\usepackage{dingbat}
 \renewcommand{\Aufgabenblatt}{1}
 \renewcommand{\Ausgabedatum}{Mi. 18.10.2017}
 \renewcommand{\Abgabedatum}{Fr. 03.11.2017}
@@ -24,36 +25,87 @@ Die Datenunabhängigkeit bezeichnet die Unabhängikeit der Daten und den dazugehör
 Die logische Unabhängikeit bezeichnet, die Robustheit der Anwendungsprogramme gegen Änderungen im Datenbankschema. Dies ist auf jeden Fall bei SQL Datenbanken nicht der Fall, da wenn ich mein Schema verändere ich auch meine SQL-Queries verändern muss. \\ 
 \subsection{Beispiele}
 \begin{enumerate}
-\item SAP System in Unternehmen \\
-\item Googles Suchmaschine \\	
-\item 
+\item SAP System in Unternehmen : Arbeitsabläufe leichter machen.  \\
+\item Googles Suchmaschine : Das Internet indizieren und danach mit Anfragen von Usern durchsuchen \\	
+\item Geldautomat: Geld abheben, Kontoauszug \\
 \end{enumerate}
 \section{Miniwelt}
 \subsection{relevante Objekte}
+\begin{itemize}
+\item Spieler \\
+\begin{itemize}
+\item Anmelden Anwendung \\
+\item Tippgemeinschaft erstellen \\
+\item Wettbewerbe anlegen \\
+\item Begegnungen zu Wettbewerb hinzufügen \\
+\item Ergebnisse eintragen \\
+\item Spieler zu Gemeinschaft hinzufügen/entfernen \\
+\item Tipps abgeben \\
+\item Sich über Begegnung informieren, Punkte einsehen etc. \\
+\end{itemize}
+\item Wettbewerb\\
+\begin{itemize}
+\item Hat einen Gründer \\
+\item Gehört zu einer Tippspielgemeinschaft \\
+\end{itemize}
+\item Tippgemeinschaft \\
+\begin{itemize}
+\item Hat verwaltenden Gründer \\
+\item Hat n-Wettbewerbe \\
+\item Hat n-Mitspieler \\
+\item Punktestand für Spieler \\
+\end{itemize}
+\item Begegnung \\
+\begin{itemize}
+\item Gehört zu 1 Wettbewerb \\
+\item Hat 1 Ergebnis \\
+\item Hat n-Tipps \\
+\end{itemize}
+\item Tipp  \\
+\begin{itemize}
+\item Hat einen diskreten Wert \\
+\item Gehört zu einer Begegnung \\
+\item Wird von Spieler erstellt \\
+\end{itemize}
+\end{itemize}
 \subsection{Anforderungen}
+
 \section{Transaktionen}
 \subsection{Zeitpunkt A}
 \subsubsection{Dateisystem}
 \begin{enumerate}
 \item Daten im RAM: \\
+Daten im RAM gehen verloren, die gesamte Transaktion muss wiederholt werden.
 \item Daten auf Platte: \\
+Die Daten wurden bereits geschrieben, heißt wir haben nun das Problem das wir unseren Vorgang nicht einfach wiederholen können da von KontoID = 5 bereits das Geld abgebucht wird. Beim Dateisystem wissen wir allerdings nicht wie weit unsere Transaktion war. Dadurch ist es schwer die Transaktion ohne weitere Mechanismen zu wiederholen. \\
 \end{enumerate}
 \subsubsection{Datenbanksystem}
 \begin{enumerate}
 \item Daten im RAM: \\
+Die Daten im RAM gehen verloren, die gesamte Transaktion muss wiederholt werden. \\
 \item Daten auf Platte: \\
+Die Daten wurden bereits geschrieben, heißt also das KontoID = 5 hat bereits 1000 Geld weniger. Das DBM muss könnte nun also genauso wie das Dateisystem von Zeitpunkt A an weitermachen, das geht jedoch gegen das Prinzip der Atomarität(Im Späteren erklärt).
 \end{enumerate}
 \subsection{Zeitpunkt B}
 \subsubsection{Dateisystem}
 \begin{enumerate}
 \item Daten im RAM: \\
+Die Daten gehen verloren die gesamte Transaktion muss wiederholt werden. 
 \item Daten auf Platte: \\
+Die Daten wurden geschrieben. Es werden allerdings die Daten nicht noch einmal ausgegeben. Diesen Fall könnte man also ignorieren, da der essentielle Teil der Operation durchgeführt wurde. Und einfach die Daten beim nächsten Versuch nur noch einmal ausgeben. 
 \end{enumerate}
 \subsubsection{Datenbanksystem}
 \begin{enumerate}
 \item Daten im RAM: \\
+Die Daten gehen verloren die gesamte Transaktion muss wiederholt werden. 
 \item Daten auf Platte: \\
+Die Daten wurden geschrieben, und das Geld erfolgreich verbucht. Die Daten sind also konsistent. Die Transaktion wurde jedoch nicht komplett durchgeführt also muss nach dem Atomaritätsprinzip die Transaktion nochmal durchgeführt werden. 
 \end{enumerate}
+\subsection{DBM Mechanismen}
+\begin{itemize}
+\item Durch die Atomarität von Transaktionen in einem DBM, muss eine Transaktion immer ganz oder garnicht durchgeführt werden. Wie bei Zeitpunkt B, wo zwar alles schon geschrieben ist und nur die Ausgabe fehlt. \\
+\item Dadurch das die Transaktion durch das DBM durchgeführt wird, müssen wir als Nutzer uns nicht darum kümmern (Im Gegensatz zum Dateisystem) das eine Anfrage wiederholt wird, wenn es zu Fehler kommt, sondern wir können uns darauf verlassen, dass unsere Anfrage komplett ausgeführt wird, wenn wir sie ans DBM übergeben haben. \\
+\end{itemize}
 \section{Warm-Up SQL}
 \subsection{Create/Insert}
 Mit dem Befehl CREATE TABLE wird eine Tabelle mit dem Namen user in der Datenbank gdb$\_$Gruppe erstellt. Diese enhält dem Befehl entsprechend drei verschiedene Einträge, eine ID welche als primärer Key für die Tabelle verwendet wird, außerdem einen 49 Zeichen langen Character der nicht leer sein darf wenn ein Objekt in die Tabelle eingefügt wird, und als letztes noch das passwort, welches 8 Zeichen lang sein kann und auch nicht leer sein darf. \\
