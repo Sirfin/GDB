@@ -1,0 +1,47 @@
+\documentclass[ngerman]{gdb-aufgabenblatt}
+
+\usepackage{enumitem}
+\usepackage{dingbat}
+\renewcommand{\Aufgabenblatt}{1}
+\renewcommand{\Ausgabedatum}{Mi. 18.10.2017}
+\renewcommand{\Abgabedatum}{Fr. 03.11.2017}
+\renewcommand{\Gruppe}{Meimerstorf,Jochens,Töter}
+\renewcommand{\STiNEGruppe}{19}
+\usepackage{tabularx}
+
+
+\begin{document}
+\section{Informationsmodellierung mit dem Entity-Relationship Modell}
+\section{Informationsmodellierung: Beschreibung mit ER-Modellen}
+\subsection{}
+Ein Fahrzeug hat eine eindeutige KFZ-Nr. sowie ein nicht eindeutigen Fahrzeugtyp. \\
+Eine Person hat eine eindeutige SVNr. sowie einen nicht eindeutigen Namen. \\
+Ein Fahrzeug kann auf mehrere Personen gemeldet sein, aber eine Person immer nur auf ein Fahrzeug. Das macht doch keinen Sinn?\\
+%Frage hier stellen. 
+\subsection{}
+Ein Fahrzeug hat eine eindeutige KFZ-Nr. sowie ein nicht eindeutigen Fahrzeugtyp und kann genau einmal gekauft werden. \\
+Ein Verkäufe hat eine eindeutige VNr. sowie einen nicht eindeutigen Namen und kann m Autos verkaufen. \\
+Ein Kunde hat eine eindeutige K-Nr. und kann n Käufe tätigen. \\
+Ein Kauf hat ein Datum und einen Preis. \\
+\subsection{}
+Ein Superheld hat eine eindeutige HNr. sowieso einen Namen und ein Einsatzgebiet. Jeder Superheld besitzt m Superkräfte \\
+Eine Superkraft hat eine eindeutige Bezeichnung, sowie eine Beschreibung. Jede Superkraft wird von n Superhelden verwendet. \\
+Jede Beziehung zwischen Superheld und Superkraft wird von einer Menge von  Bedingungen begleitet. \\
+\subsection{}   
+Eine Person hat eindeutige Kombination aus Vor und Nachnamen.\\
+Ein Erzähler ist eine Person \\
+Ein Zuhörer ist eine Person \\
+Ein Erzähler erzählt mindestens einen Witz bis beliebig viele Witze \\
+Ein Zuhörer versteht mindestens 0 Witze \\
+Einen Witz erzählen hat Pointen wobei Pointen mehrwertig ist. \\
+\section{}
+\subsection{}
+Minimal bedeutet, dass ein Schlüssel nicht aus mehreren Attributen bestehen darf, wenn bereits eins dieser Attribute eindeutig ist. \\
+Eindeutig bedeutet, dass das Attribut bzw. die Kombination aus mehreren Attributen nur maximal ein Mal	 in allen Entitäten vorkommt. \\
+Einige Attribute die man verwenden könnte, wäre das Geburtsdatum, dieses ist für unsere 6 Personen eindeutig und minimal. Weiterhin könnte man die Telefon Nr. verwenden. \\
+Das Schlüsselpaar(Vorname,Nachname) ist nicht Minimal, da schon nur das Attribut Vorname eindeutig ist. \\
+\subsection{} 
+Im Allgemeinen ist das ganze Problem ein wenig schwerer, da auch unsere beiden Möglichen Schlüssel in diesem Fall relativ wahrscheinlich nicht eindeutig sind. Bei den Geburtstagen siehe https://de.wikipedia.org/wiki/Geburtstagsparadoxon . Und auch bei den Telefonnummern, könnte es durchaus sein, dass zwei Studenten in derselben Wohnung leben(WG) oder Geschwister sind die noch Zuhause wohnen.\\
+Dies lässt sich, wenn wir keinerlei neue ID hinzufügen sollen am leichtesten mit einem Schlüsselpaar lösen. In diesem Fall würden sich vermutlich (Telefon-Nr.,Geb-Datum,Vorname) anbieten, da bei nur Telefon-Nr. und Geb-Datum hätten wir immernoch Zwillinge die noch Zuhause wohnen mit drin. Allerdings wenn wir noch den Vornamen dazunehmen, dürfte die Wahrscheinlichkeit gegen 0 laufen. \\
+\textbf{Allerdings} würde man das in der Praxis natürlich nicht verwenden, weil selbst eine kleine Wahrscheinlichkeit das ganze zusammenbrechen lassen könnte. Wir würden empfehlen hier die Einführung einer Matrikelnummer zu veranlassen die eindeutig für jeden Studenten vergeben wird. \\
+\end{document}
