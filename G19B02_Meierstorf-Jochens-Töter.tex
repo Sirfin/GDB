@@ -11,29 +11,37 @@
 
 
 \begin{document}
+
 \section{Informationsmodellierung mit dem Entity-Relationship Modell}
+\subsection{}
+\includegraphics[scale=0.7]{GraphAufgabe2.jpg}
+\subsection{}
+Ein Medikament darf einem Sportler nicht verabreicht werden, wenn es in der Sportart verboten ist. \\
+Ein Kontrolleur darf einen Sportler nicht am selben Tag kontrollieren wie ihm ein Medikament verabreicht wird. \\
 \section{Informationsmodellierung: Beschreibung mit ER-Modellen}
 \subsection{}
 Ein Fahrzeug hat eine eindeutige KFZ-Nr. sowie ein nicht eindeutigen Fahrzeugtyp. \\
 Eine Person hat eine eindeutige SVNr. sowie einen nicht eindeutigen Namen. \\
-Ein Fahrzeug kann auf mehrere Personen gemeldet sein, aber eine Person immer nur auf ein Fahrzeug. Das macht doch keinen Sinn?\\
-%Frage hier stellen. 
+Ein Fahrzeug ist auf eine Person gemeldet \\
+Und Jede Person hat n Fahrzeuge gemeldet \\
 \subsection{}
 Ein Fahrzeug hat eine eindeutige KFZ-Nr. sowie ein nicht eindeutigen Fahrzeugtyp und kann genau einmal gekauft werden. \\
-Ein Verkäufe hat eine eindeutige VNr. sowie einen nicht eindeutigen Namen und kann m Autos verkaufen. \\
+Ein Verkäufe hat eine eindeutige VNr. sowie einen nicht eindeutigen Namen und kann m Verkäufe tätigen. \\
 Ein Kunde hat eine eindeutige K-Nr. und kann n Käufe tätigen. \\
 Ein Kauf hat ein Datum und einen Preis. \\
 \subsection{}
-Ein Superheld hat eine eindeutige HNr. sowieso einen Namen und ein Einsatzgebiet. Jeder Superheld besitzt m Superkräfte \\
-Eine Superkraft hat eine eindeutige Bezeichnung, sowie eine Beschreibung. Jede Superkraft wird von n Superhelden verwendet. \\
+Ein Superheld hat eine eindeutige HNr. sowieso einen Namen und ein Einsatzgebiet. Jeder Superheld besitzt n Superkräfte \\
+Eine Superkraft hat eine eindeutige Bezeichnung, sowie eine Beschreibung. Jede Superkraft wird von m Superhelden verwendet. \\
 Jede Beziehung zwischen Superheld und Superkraft wird von einer Menge von  Bedingungen begleitet. \\
 \subsection{}   
 Eine Person hat eindeutige Kombination aus Vor und Nachnamen.\\
 Ein Erzähler ist eine Person \\
 Ein Zuhörer ist eine Person \\
-Ein Erzähler erzählt mindestens einen Witz bis beliebig viele Witze \\
-Ein Zuhörer versteht mindestens 0 Witze \\
-Einen Witz erzählen hat Pointen wobei Pointen mehrwertig ist. \\
+Ein Erzähler hat mind. eine Person dem er einen Witz erzählt\\
+Ein Zuhörer hat mind. 0 Erzähler  \\
+Einen Witz erzählen hat eine Menge von Pointen\\
+\subsection{}
+Ein Erzähler kann max. einen Witz erzählen. und mindestens 0 \\
 \section{}
 \subsection{}
 Minimal bedeutet, dass ein Schlüssel nicht aus mehreren Attributen bestehen darf, wenn bereits eins dieser Attribute eindeutig ist. \\
