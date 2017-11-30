@@ -1,5 +1,4 @@
 \documentclass[ngerman]{gdb-aufgabenblatt}
-
 \usepackage{enumitem}
 \usepackage{dingbat}
 \usepackage{ifsym}
@@ -11,7 +10,7 @@
 \renewcommand{\Gruppe}{Meimerstorf,Jochens,Töter}
 \renewcommand{\STiNEGruppe}{19}
 \usepackage{tabularx}
-
+\usepackage[normalem]{ulem}
 
 \begin{document}
 
@@ -26,9 +25,26 @@ Ein Heft kann nur von einem Kind bessen werden \\
 \subsection{}
 \includegraphics[scale=0.5]{GraphAufgabe3.jpg}
 Anmerkung: Kalenderwoche soll eigentlich gestrichelt unterstrichen sein, da es nur mit dem Namen eindeutig ist, dies war in Yed Graph Editor jedoch nicht möglich
-\section{}
+\section{Relationales Modell}
+\textbf{Raumtyp}(\underline{Bezeichnung},MinGrösse) \\
+\textbf{Ausstattung}(\underline{\dashuline{Bezeichnung->Raumtyp.Bezeichnung},Raumausstattung}) \\
+\textbf{Hotel}(Name,\underline{Adresse},\dashuline{Leiter->Manager.SVNr})\\
+\textbf{Mitarbeiter}(\underline{SVNr},Name,Alter,\dashuline{Adresse->Hotel.Adresse}) \\
+\textbf{Manager}(\underline{SVNr},TelNr) \\
+\textbf{Hotelier}(\underline{SVNr},Befugnis) \\
+\textbf{Dienstplan}(\underline{\dashuline{SVNr->Hotelier.SVNr},Jahr,Tag},von,bis)\\
+
+\textbf{Besitzt}(\underline{\dashuline{Adresse->Hotel.Adresse}, \dashuline{Bezeichnung->Raumtyp.Bezeichnung}},Anzahl) \\
+\textbf{Vertritt}(\underline{\dashuline{SVNr->Hotelier.SVNr} ,\dashuline{ VSVNr->Hotelier.SVNr}},Datum) \\
+
 \section{Relationale Algebra}
 \subsection{}
+
+
+
+
+
+
 \subsubsection{}
 Die erste Aussage ist nicht korrekt, da in der letzten Selektion 
 $\sigma_{Geburt=1962-07-25}$ ein Attribut abgefragt wird, welches in der ersten Projektion $\pi_{PID,Vorname,Nachname}$ bereits rausgefiltert wurde. \\
