@@ -83,15 +83,15 @@ SELECT DISTINCT m1.Geburtsdatum
 FROM Matrose m1, Schiff s1, anheuern a1
 Where m1.MNR = a1.Matrose 
 AND a1.Schiff = s1.SNR 
-AND a1.Dienstbeginn = ?1957 ? 04 ? 01?
+AND a1.Dienstbeginn = '1957 - 04 - 01'
 ORDER m1.Geburtsdatum DESC
 \end{verbatim}
 \subsection{}
 \begin{verbatim}
 SELECT *
 FROM Matrose
-Where Geburtsdatum > ?1530 ? 01 ? 01? 
-AND Geburtsdatum < ?1535 ? 01 ? 01? 
+Where Geburtsdatum > '1530 - 01 - 01' 
+AND Geburtsdatum < '1535 - 01 - 01' 
 AND Nachname LIKE 'H%'
 \end{verbatim}
 \subsection{}
@@ -113,7 +113,7 @@ FROM Schiff)
 \begin{verbatim}
 SELECT m.MNR, MAX(a1.Jahresgehalt)
 FROM Matrose m, anheuern a1, Schiff s1
-WHERE m.MNR = a1.Matrose AND a1.Schiff = s1.SNR AND a1.Dienstbeginn > '2016 ? 12 ? 24'
+WHERE m.MNR = a1.Matrose AND a1.Schiff = s1.SNR AND a1.Dienstbeginn > '2016 - 12 - 24'
 \end{verbatim}
 \section{}
 Der Ort des Hafens, an dem zwei Schiffe mit unterschiedlichen Heimathäfen am selben Tag Stapellauf hatten.
